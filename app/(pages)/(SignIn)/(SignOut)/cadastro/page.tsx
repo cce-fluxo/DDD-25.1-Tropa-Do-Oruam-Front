@@ -1,0 +1,72 @@
+"use client";
+
+import BackGroundCadastro from "../../../../components/BackGroundCadastro";
+import Input from "../../../../components/Input";
+import { useState } from "react"
+import Button from "../../../../components/Button";
+
+export default function Cadastro() {
+    const [nome, setNome] = useState("")
+    const [sobrenome, setSobrenome] = useState("")
+    const [email, setEmail] = useState("")
+    const [cpf, setCpf] = useState("")
+    const [celular, setCelular] = useState("")
+
+    return (
+        <main className='bg-indigo-300 relative grow'>
+            <BackGroundCadastro/>
+            <div className='flex justify-center items-center relative z-10 h-full py-6 px-8'>
+                <div className='flex flex-col items-center w-full max-w-lg bg-white rounded-lg space-y-12 pt-15 pb-20 px-15'>
+                    <h1 className='text-2xl font-bold text-black'>Crie sua nova conta</h1>
+                    <div className='w-full space-y-4'>
+                        <Input
+                            type='nome'
+                            id='nome'
+                            placeholder='Nome'
+                            value = { nome }
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setNome(e.target.value)}
+                            required
+                        />
+                        <Input
+                            type='sobrenome'
+                            id='sobrenome'
+                            placeholder='Sobrenome'
+                            value = { sobrenome }
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSobrenome(e.target.value)}
+                            required
+                        />
+                        <Input
+                            type='email'
+                            id='email'
+                            placeholder='Email'
+                            value = { email }
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+                            required
+                        />
+                        <Input
+                            type = "cpf"
+                            id='cpf'
+                            placeholder='CPF'
+                            value = { cpf }
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCpf(e.target.value)}
+                            required
+                        />
+                        <Input
+                            type='numero'
+                            id='numero'
+                            placeholder="Número de celular"
+                            value = { celular }
+                            onChange = {(e: React.ChangeEvent<HTMLInputElement>) => setCelular(e.target.value)}
+                            required
+                        />
+                        <div className='w-full flex flex-row justify-center mt-15 space-x-2 px-10'>
+                            <Button label='Voltar' variant='tertiary'/>
+                            <Button label='Continuar' variant='primary' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    )
+}
