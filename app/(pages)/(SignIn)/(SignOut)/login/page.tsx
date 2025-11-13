@@ -13,13 +13,13 @@ export default function Login() {
     console.log({ lembrar })
 
     return (
-        <main className='relative grow bg-indigo-200'>
+        <main className='relative grow bg-[#CCCBFF] flex justify-center items-center'>
             <BackGroundLogin />
-            <div className='flex justify-center items-center relative z-10 h-full py-6 '>
-                <div className='flex flex-col items-center w-full max-w-lg bg-white rounded-lg space-y-12 pt-15 pb-30 px-20'>
-                    <h1 className='text-2xl font-bold text-gray-900 '>Seja bem-vindo!</h1>
+            <div className='flex justify-center items-center relative z-10 h-full w-full px-8'>
+                <div className='flex flex-col items-center w-full max-w-lg bg-white rounded-lg space-y-12 pt-15 pb-30 px-6'>
+                    <h1 className=' text-xl md:text-2xl font-bold text-gray-900 '>Seja bem-vindo!</h1>
 
-                    <div className='w-full space-y-6'>
+                    <div className='w-full space-y-6 '>
                         <Input 
                             type='email'
                             id="email"
@@ -46,9 +46,9 @@ export default function Login() {
                             <Button label='Esqueci minha senha' variant="quaternary" />
                         </div>
                     </div>
-                    <div className='flex flex-col justify-center items-center w-full space-y-4'>
+                    <div className='flex flex-col justify-center items-center w-full space-y-4 px-12 md:px-1'>
                         <Button label='Entrar'/>
-                        <Button label='Cadastrar' variant='secondary'/>
+                        <Button label='Cadastrar' variant='secondary' href='/cadastro'/>
                     </div>
                 </div>
             </div>
