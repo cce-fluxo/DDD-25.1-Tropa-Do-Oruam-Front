@@ -9,7 +9,7 @@ export default function BackGroundLogin() {
                 layout='fill'
                 objectFit='fill'
                 objectPosition='center'
-                quality={100}
+                quality={75}
                 priority
             ></Image>
         </main>

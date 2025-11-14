@@ -4,11 +4,12 @@ interface props {
     label : string;
     variant?: "primary" | "secondary" | "tertiary" | "quaternary"
     href?: string;
+    type?: string;
 
 
 }
 
-export default function Button({ label, variant = "primary", href, ...props }: props) {
+export default function Button({ label, variant = "primary", href, type, ...props }: props) {
 
     const allClasses = `
         rounded-md

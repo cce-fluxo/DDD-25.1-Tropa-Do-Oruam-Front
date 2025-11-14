@@ -4,13 +4,21 @@ import BackGroundCadastro from "../../../../components/BackGroundCadastro";
 import Input from "../../../../components/Input";
 import { useState } from "react"
 import Button from "../../../../components/Button";
+import DataInput from "../../../../components/DataInput"
 
 export default function Cadastro() {
+    // Cria cada variável da tela
     const [nome, setNome] = useState("")
     const [sobrenome, setSobrenome] = useState("")
     const [email, setEmail] = useState("")
     const [cpf, setCpf] = useState("")
     const [celular, setCelular] = useState("")
+    const [dia, setDia] = useState("")
+    const [mes, setMes] = useState("")
+    const [ano, setAno] = useState("")
+    
+    // Teste para ver se o Input de data estava funcionando
+    console.log('Data de nascimento:', dia,'/', mes, '/', ano)
 
     return (
         <main className='bg-[#CCCBFF] relative grow flex justify-center items-center'>
@@ -35,6 +43,19 @@ export default function Cadastro() {
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSobrenome(e.target.value)}
                             required
                         />
+
+                        <DataInput
+                            valueDia={dia}
+                            onChangeDia={(e: React.ChangeEvent<HTMLInputElement>) => setDia(e.target.value)}
+
+                            valueMes={mes}
+                            onChangeMes={(e: React.ChangeEvent<HTMLInputElement>) => setMes(e.target.value)}
+
+                            valueAno={ano}
+                            onChangeAno={(e: React.ChangeEvent<HTMLInputElement>) => setAno(e.target.value)}
+                            
+                        />
+
                         <Input
                             type='email'
                             id='email'
