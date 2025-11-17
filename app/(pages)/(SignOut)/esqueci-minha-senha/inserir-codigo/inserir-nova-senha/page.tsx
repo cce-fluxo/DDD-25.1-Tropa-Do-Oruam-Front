@@ -1,8 +1,10 @@
 'use client';
 import HeaderSignOut from "@/app/components/HeaderSignOut";
 import Button from "@/app/components/Button";
+import { useRouter } from "next/navigation";
 
 export default function NovaSenha(){
+    const router = useRouter();
     return (
             <div className="flex flex-col min-h-screen" >
                 <HeaderSignOut />
@@ -36,8 +38,9 @@ export default function NovaSenha(){
                                 Confirmar
                             </Button>
                             <Button
-                                type="submit"
+                                type="button"
                                 variant="secondary"
+                                onClick={() => router.back}
                             >
                                 Voltar
                             </Button>
