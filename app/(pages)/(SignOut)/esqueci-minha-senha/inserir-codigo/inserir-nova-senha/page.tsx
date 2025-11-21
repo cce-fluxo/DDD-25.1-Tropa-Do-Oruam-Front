@@ -40,7 +40,7 @@ export default function NovaSenha(){
                             <Button
                                 type="button"
                                 variant="secondary"
-                                onClick={() => router.back}
+                                href="/esqueci-minha-senha/inserir-codigo"
                             >
                                 Voltar
                             </Button>
