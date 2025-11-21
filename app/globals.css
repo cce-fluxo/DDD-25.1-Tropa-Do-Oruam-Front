@@ -6,6 +6,7 @@
   
   --cor-fundo-pagina: #CCCBFF;
   --cor-principal: #5754DE; 
+  --cor-fundo-home: #F2F2F2;
 }
 
 @theme inline {
@@ -13,6 +14,7 @@
   --color-foreground: var(--foreground);
   --color-fundo-pagina: var(--cor-fundo-pagina);
   --color-principal: var(--cor-principal);
+  --color-fundo-home: var(--cor-fundo-home);
   --font-sans: var(--font-lato);
 }
 

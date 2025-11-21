@@ -56,7 +56,7 @@ export default function Header() {
             type="button"
             className="ml-auto p-2"
             >
-            <Bell className="w-6 h-6 text-principal rounded-md hover:bg-fundo-pagina"/>
+            <Bell className="w-6 h-6 text-principal cursor-pointer rounded-full hover:bg-fundo-pagina"/>
 
           </button>
         

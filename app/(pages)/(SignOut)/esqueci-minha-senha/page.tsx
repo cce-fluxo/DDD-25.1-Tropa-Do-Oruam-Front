@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function EsqueciMinhaSenha(){
     const router = useRouter();
     return (
-            <div className="flex flex-col min-h-screen" >
+            <div className="flex flex-col min-h-screen shadow-md" >
                 <HeaderSignOut />
                 <main className="flex flex-col items-center justify-center flex-grow bg-fundo-pagina gap-y-10 px-4">
                     <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">

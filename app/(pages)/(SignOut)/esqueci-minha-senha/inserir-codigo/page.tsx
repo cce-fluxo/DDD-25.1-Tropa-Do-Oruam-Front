@@ -27,7 +27,7 @@ const router = useRouter();
                         <Button
                             type="button" // Trocar pra submit e fazer a lógica depois
                             variant="quaternary"
-                            className="mt-2 font-normal text-sm text-principal self-start"
+                            className="font-normal text-sm text-principal self-start"
                         >
                             Reenviar código
 
