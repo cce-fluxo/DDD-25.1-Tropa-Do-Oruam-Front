@@ -50,3 +50,36 @@
     color: #cbd5e1 !important;
     cursor: default;
 }
+
+.big-calendar-wrapper .react-calendar__tile {
+    height: 100px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px !important;
+    border: 1px solid #f3f4f6;
+}
+
+.big-calendar-wrapper .react-calendar__month-view__days__day {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.big-calendar-wrapper .react-calendar__tile--active {
+    background: #e0e7ff !important;
+    color: #5457DE !important;
+    border: 2px solid #5457DE !important;
+}
+
+.big-calendar-wrapper .react-calendar {
+    width: 100% !important;
+    height: 100%;
+    border: none;
+}
+
+.calendario-grande-wrapper .react-calendar__navigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}

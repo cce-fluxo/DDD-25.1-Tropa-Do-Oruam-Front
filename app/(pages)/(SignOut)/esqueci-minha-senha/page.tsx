@@ -1,23 +1,34 @@
 'use client';
+
 import HeaderSignOut from "@/app/components/HeaderSignOut";
 import Button from "@/app/components/Button";
 import { useRouter } from "next/navigation";
 
 export default function EsqueciMinhaSenha(){
     const router = useRouter();
-    return (
+        return (
             <div className="flex flex-col min-h-screen shadow-md" >
+                
                 <HeaderSignOut />
+                
                 <main className="flex flex-col items-center justify-center flex-grow bg-fundo-pagina gap-y-10 px-4">
+                    
                     <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+                        
                         <h1 className="text-xl font-sans font-bold text-center">
+                        
                         Digite o {" "}
+                        
                         <span className="text-principal">
                             e-mail
                             </span>
+                        
                             {" "} cadastrado
+                        
                         </h1>
+                        
                         <form className="mt-6 flex flex-col items-center gap-y-4">
+                        
                             <input
                                 type="text"
                                 placeholder="Email"
@@ -33,15 +44,20 @@ export default function EsqueciMinhaSenha(){
                             >
                                 Continuar
                             </Button>
+                        
                             <Button
                                 type="button"
                                 variant="secondary"
                             >
                                 Voltar
                             </Button>
+                        
                         </form>
+                    
                     </div>
+                
                 </main>
+            
             </div> 
         );
     }

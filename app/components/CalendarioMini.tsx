@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import Calendar from 'react-calendar';
@@ -9,7 +9,7 @@ import '@/app/styles/calendar.css';
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-export default function CalendarHome() {
+export default function CalendarioMini() {
     const [date, setDate] = useState<Value>(new Date());
     
     return (

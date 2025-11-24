@@ -10,8 +10,8 @@ export default function Header() {
             <Image
             src="/sorrisync.png"
             alt="Logo SorriSync"
-            width={106}
-            height={25}
+            width={140}
+            height={20}
             priority
             />
           </div>

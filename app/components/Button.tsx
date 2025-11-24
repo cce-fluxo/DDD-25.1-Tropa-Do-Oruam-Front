@@ -14,7 +14,7 @@ type ButtonAsButton = BaseProps &
 
 type ButtonAsLink = BaseProps & 
   Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'href'> & {
-    href: string; // 'href' é obrigatório e uma string
+    href: string;
   };
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
