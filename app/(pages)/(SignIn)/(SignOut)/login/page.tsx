@@ -11,6 +11,7 @@ export default function Login() {
     const [senha, setSenha] = useState("");
     const [lembrar, setLembrar] = useState(false);
     console.log({ lembrar })
+    console.log({ senha })
 
     return (
         <main className='relative grow bg-[#CCCBFF] flex justify-center items-center'>
