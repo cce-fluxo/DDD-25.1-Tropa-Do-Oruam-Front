@@ -2,7 +2,7 @@ import Link from "next/link";
 
 interface props {
     label : string;
-    variant?: "primary" | "secondary" | "tertiary" | "quaternary"
+    variant?: "primary" | "secondary" | "tertiary" | "quaternary" | "quinary"
     href?: string;
     type?: string;
 
@@ -21,7 +21,8 @@ export default function Button({ label, variant = "primary", href, type, ...prop
         ${variant == "primary" ? "bg-[#5457DE] w-full md:w-[60%] text-white" :
             variant == "secondary" ? "bg-white w-full md:w-[60%] border-[#5457DE] border-2 text-[#5457DE]" :
                 variant == "tertiary" ? "bg-indigo-200 w-full md:w-[60%] text-black":
-                    "text-xs font-bold text-[#5457DE]"}
+                    variant == "quaternary" ? "text-xs font-bold text-[#5457DE]":
+                        "font-bold text-gray-600"}
 
     `
     if (href){
